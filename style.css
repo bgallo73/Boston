@@ -28,7 +28,7 @@ body{
 
 .header{
 	position: relative;
-	background: url(img/background.gif);
+	background: url(img/mobile-background.png);
 	height: 100vh;
 	background-size: cover;
 	background-position: top;
