@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Boston</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<meta name="viewport" content="width=device-width">
+</head>
+<body>
+<div class="navigation">
+	<input type="checkbox" class="navigation_checkbox" id="navi-toggle">
+	<label for="navi-toggle" class="navigation_button">
+		<span class="navigation_icon"></span>
+	</label>
+	<div class="navigation_background">&nbsp;</div>
+
+	<nav class="navigation_nav">
+		<ul class="navigation_list">
+			<li class="navigation_item"><a href="#section-top" class="navigation_link">Top</a></li>
+			<li class="navigation_item"><a href="#section-about" class="navigation_link">About</a></li>
+			<li class="navigation_item"><a href="#section-landmarks" class="navigation_link">Landmarks</a></li>
+			<li class="navigation_item"><a href="#section-idk" class="navigation_link">idk</a></li>
+		</ul>
+	</nav>
+</div>
+<section class="top" id="top">
+	<header class="header">
+		<div class="logo-box"><img src=""></div>
+		<div class="heading-primary">
+		<div class="text-box">
+			<h1 class="heading-primary-main">BOSTON</h1>
+			<h2 class="heading-secondary-main"></h2>
+		</div>
+		</div>
+		<div class="button">
+		<button href="#" class="heading-btn">Visit Today</button>
+		</div>
+	</header>
+</section>
+<section class="about" id="about">
+	<div class="about">
+		<div class="row">
+			<div class="col-1-of-2">
+				<h1 class="about-heading-primary">Why Come to Boston?</h1>
+					<p class="paragraph">Boston is both a modern and historical city. You can explore the city and see landmarks like the Prudential Center while learning about the history of the founding of the United States.</p>
+				</div>
+			<div class="col-2-of-2">
+				<div class="composition">
+					<img src="img/img1.jpg" alt="photo1" class="composition_--p1">
+					<img src="img/img2.jpg" alt="photo2" class="composition_--p2">
+					<img src="img/img3.jpg" alt="photo3" class="composition_--p3">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="landmarks" id="landmarks">
+	<p class="cards-description">These are just some of the sites you can visit in this city:</p>
+	<div class="cards">
+		<div class="card">
+			<div class="card-inner">
+				<div class="card-side card-side-front">
+					<img src="img/freedom_trail.jpg" style="width:100%">
+					Freedom Trail
+				</div>
+				<div class="card-side card-side-back">
+					This 2.5-mile-long trail will lead you to 16 locations rich in our country's history.
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-inner">
+				<div class="card-side card-side-front">
+					<img src="img/prudential.jpg" style="width:100%">
+					Prudential Center
+				</div>
+				<div class="card-side card-side-back">
+					One of the tallest buildings in the city, it has shops, restaurants, and even an observation deck.
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-inner">
+				<div class="card-side card-side-front">
+					<img src="img/mfa.jpg" style="width:100%">
+					Museum of Fine Arts
+				</div>
+				<div class="card-side card-side-back">
+					The 5th-largest museum in the country, it has over 450,000 works of art from a wide variety of movements and cultures.
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="reviews" id="reviews">
+<div class="open-popup">
+	<a href="#open-modal">See what people think of Boston</a></div>
+		<div id="open-modal" class="modal-window">
+  	 		 <a href="#modal-close" title="Close" class="modal-close">Close</a>
+   			 <h1>Reviews</h1>
+   			 <div class="review">"So much to see - if you like history, you can't miss this." - John Doe
+  			 </div>
+		</div>
+</body>
+</html>
