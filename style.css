@@ -23,6 +23,7 @@ html{
 
 body{
 	background-image: linear-gradient(to right bottom, rgba(0,0,139,1), rgba(0,255,127,1));
+	overflow-x: hidden; 
 }
 
 #top {
@@ -109,6 +110,7 @@ body{
 	position: relative;
 	bottom: 35rem;
 	border-radius: 5rem;
+	right: -15rem;
 }
 
 [class^="composition"]:not(:last-child):hover {
@@ -484,7 +486,6 @@ body{
 		text-align: center;
 		font-size: 9rem;
 		color: white;
-		left: 25%;
 		top: 25rem;
 	}
 
