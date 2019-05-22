@@ -5,12 +5,15 @@
 
 html{
 	font-size:62.5%;
-	width: 100%;
+	 width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 
 *,*::before, *::after {
 	padding:0;
-	margin:0;
+	margin: 0;
 	box-sizing: border-box;
 }
 
@@ -40,20 +43,24 @@ body{
 	position: absolute;
 	font-family: 'Source Sans Pro', sans-serif;
 	text-align: center;
-	font-size: 6rem;
+	font-size: 10rem;
 	color: white;
-	left: 45%;
-	top: 15rem;
+	width: 100%;
+	margin: 0 auto;
+	top: 15vh;
+}
+
+.button {
+	text-align: center;
 }
 
 .heading-btn {
-	position: absolute;
+	position: relative;
 	font-size: 3rem;
 	background-color: white;
 	border-radius: 1rem;
 	font-family: 'Source Sans Pro', sans-serif;
-	top: 40vh;
-	left: 45%;
+	top: 45vh;
 	color: teal;
 	padding: 1.5rem 3.2rem;
 	-webkit-transition-duration: 0.4s;
@@ -85,22 +92,23 @@ body{
 }
 
 .about-heading-primary {
-	font-size: 5rem;
+	left: 5rem;
+	font-size: 6rem;
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
 .paragraph {
-	font-size: 2.5rem;
+	font-size: 3rem;
 	font-family: 'Source Sans Pro', sans-serif;
 	padding-bottom: 1.5rem;
 }
 
 [class^="composition"] {
-	height: 25rem;
-	width: 37.5rem;
-	position: absolute;
-	top: 102rem;
-	right: 15%;
+	height: 20rem;
+	width: 30rem;
+	position: relative;
+	bottom: 35rem;
+	border-radius: 5rem;
 }
 
 [class^="composition"]:not(:last-child):hover {
@@ -114,20 +122,20 @@ body{
 }
 
 .composition_--p1 {
-	left: 10rem;
-	top: 2.5rem;
+	left: 0rem;
+	top: 0rem;
 	transition: .4s;
 }
 
 .composition_--p2 {
-	left: 0;
-	top: -10rem;
+	left: 15rem;
+	top: -5rem;
 	transition: .4s;
 }
 
 .composition_--p3 {
-	right: 10rem;
-	top: 0;
+	left: -15rem;
+	top: -30rem;
 	transition: .4s;
 }
 
@@ -145,28 +153,36 @@ body{
 
 .col-1-of-2 {
 	width: calc((100% - 6rem)/2);
+	float: left;
+}
+
+.col-2-of-2 {
+	width: calc((100% - 6rem)/2);
+	float: right;
 }
 
 #landmarks {
 	background-image: url(img/cards-background.jpg);
 	background-repeat: no-repeat;
-	height: 75rem;
+	height: 100vh;
 	-webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
 	clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
 }
 
 .cards {
+	right: 11rem;
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: nowrap;
 	flex-direction: row;
 	align-items: center;
-	perspective: 100rem;
-	-moz-perspective: 100rem;
+	perspective: 150rem;
+	-moz-perspective: 150rem;
 	position: relative;
 	font-family: 'Source Sans Pro', sans-serif;
-	height: 40rem;
-	width: 85%;
+	height: 37.5rem;
+	width: 100%;
+	bottom: 5rem;
 }
 
 .card-inner {
@@ -176,9 +192,9 @@ body{
 }
 
 .card-side {
-	height: 40rem;
-	width: 20rem;
-	font-size: 2rem;
+	height: 50rem;
+	width: 25rem;
+	font-size: 3rem;
 	color: white;
 }
 
@@ -216,17 +232,20 @@ body{
 }
 
 .cards-description {
+	width: 100%;
 	font-family: 'Source Sans Pro', sans-serif;
-	position: absolute;
+	position: relative;
 	z-index: 2000;
-	left: 28rem;
-	top: 140rem;
+	top: 10vh;
+	float: right;
+	text-align: center;
 	font-size: 3.5rem;
 	color: black;
 }
 
 #reviews {
 	height: 20rem;
+	max-width: 100%;
 }
 
 .john-doe {
@@ -238,6 +257,7 @@ body{
 	font-size: 4.5rem;
 	font-family: 'Source Sans Pro', sans-serif;
 	text-align: center;
+	max-width: 100%;
 }
 
 .modal-window {
@@ -269,10 +289,12 @@ body{
   color: #444;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 2.5rem;
+  max-width: 100%;
 }
 
 .modal-window header {
   font-weight: bold;
+  max-width: 100%;
 }
 
 .modal-close {
@@ -285,6 +307,7 @@ body{
   left: 47%;
   width: 7rem;
   text-decoration: none;
+  max-width: 100%;
 }
 
 .modal-close:hover {
@@ -294,11 +317,12 @@ body{
 .modal-window h1 {
   font-size: 5rem;
   font-family: 'Source Sans Pro', sans-serif;
-  margin: 0 0 1.5rem;
+  max-width: 100%;
 }
 
 .review {
 	font-family: 'Source Sans Pro', sans-serif;
+	max-width: 100%;
 }
 
 .navigation_checkbox {
@@ -438,138 +462,10 @@ body{
 	width: 100%;
 }
 
-@media only screen and (max-width: 1440px) {
-	[class^="composition"] {
-	height:25rem;
-	width:37.5rem;
-	position: absolute;
-	top: 95rem;
-	right: 12%;
-}
 
-	[class^="composition"]:not(:last-child):hover {
-	transform: scale(1.3);
-	z-index:20;
-}
-
-[class^="composition"]:hover [class^="composition"]:not(:hover) {
-	transform:scale(.9);
-	filter: blur(.25rem);
-}
-
-.composition_--p1 {
-	left: 10rem;
-	top: 2.5rem;
-	transition: .4s;
-}
-
-.composition_--p2 {
-	left: 0;
-	top: -10rem;
-	transition: .4s;
-}
-
-.composition_--p3 {
-	right: 10rem;
-	top: 0;
-	transition: .4s;
-}
-
-.composition_--p3:hover {
-	transform:scale(1.3);
-}
-}
-
-@media only screen and (max-width: 1300px) {
-	[class^="composition"] {
-	height:20rem;
-	width:30rem;
-	position: absolute;
-	top: 100rem;
-	right: 14%;
-}
-
-	[class^="composition"]:not(:last-child):hover {
-	transform: scale(1.3);
-	z-index:20;
-}
-
-[class^="composition"]:hover [class^="composition"]:not(:hover) {
-	transform:scale(.9);
-	filter: blur(.25rem);
-}
-
-.composition_--p1 {
-	left: 10rem;
-	top: 2.5rem;
-	transition: .4s;
-}
-
-.composition_--p2 {
-	left: 0;
-	top: -10rem;
-	transition: .4s;
-}
-
-.composition_--p3 {
-	right: 10rem;
-	top: 0;
-	transition: .4s;
-}
-
-.composition_--p3:hover {
-	transform:scale(1.3);
-}
-}
-
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
 	html {
-		font-size: 55%;
-	}
-
-	[class^="composition"] {
-	height:22.5rem;
-	width:33.3rem;
-	position: absolute;
-	top: 105rem;
-	right: 14%;
-	}
-
-		[class^="composition"]:not(:last-child):hover {
-		transform: scale(1.3);
-		z-index:20;
-	}
-
-	[class^="composition"]:hover [class^="composition"]:not(:hover) {
-		transform:scale(.9);
-		filter: blur(.25rem);
-	}
-
-.composition_--p1 {
-	left: 10rem;
-	top: 2.5rem;
-	transition: .4s;
-}
-
-.composition_--p2 {
-	left: 0;
-	top: -10rem;
-	transition: .4s;
-}
-
-.composition_--p3 {
-	right: 10rem;
-	top: 0;
-	transition: .4s;
-}
-
-.composition_--p3:hover {
-	transform:scale(1.3);
-}
-
-@media only screen and (max-width: 800px) {
-	html {
-		font-size:65%;
+		font-size: 62.5%;
 	}
 
 	.header{
@@ -611,37 +507,31 @@ body{
 	}
 
 	#about {
-		height: 100vh;
-	}
-
-	.about-heading-primary {
-		font-size: 5rem;
-		font-family: 'Source Sans Pro', sans-serif;
+		height: 165vh;
 	}
 
 	.about-heading-primary {
 		font-size: 5rem;
 		font-family: 'Source Sans Pro', sans-serif;
 		text-align: center;
-		top: 100rem;
-		left: 17.5%;
-		position: absolute;
+		position: relative;
+		top: 5vh;
 	}
 
 	.paragraph {
-		font-size: 2.5rem;
+		top: 10vh;
+		font-size: 3rem;
 		font-family: 'Source Sans Pro', sans-serif;
-		padding-bottom: 1.5rem;
-		position: absolute;
-		top: 107rem;
+		position: relative;
 	}
 
 	[class^="composition"] {
-		height: 20rem;
-		width: auto;
-		position: absolute;
-		top: 120rem;
-		left: 30%;
+		height: 30rem;
+		width: 45rem;
+		position: relative;
+		top: 15rem;
+		left: -30rem;
+		border-radius: 5rem;
 	}
 
 	[class^="composition"]:not(:last-child):hover {
@@ -653,21 +543,154 @@ body{
 	}
 
 	.composition_--p1 {
-		left: -15rem;
+		left: 0rem;
 		top: 0rem;
-		border-radius: 2rem;
+		transition: .4s;
 	}
 
 	.composition_--p2 {
-		left: 0;
-		top: 27rem;
-		border-radius: 2rem;
+		left: 0rem;
+		top: 15rem;
+		transition: .4s;
 	}
 
 	.composition_--p3 {
-		left: 15rem;
-		top: 54rem;
-		border-radius: 2rem;
+		left: 0rem;
+		top: 30rem;
+		transition: .4s;
+	}
+
+	.composition_--p1:hover {
+		transform: unset;
+	}
+
+	.composition_--p2:hover {
+		transform: unset;
+	}
+
+	.composition_--p3:hover {
+		transform: unset;
+	}
+
+	#landmarks {
+		height: 250vh;
+		background-image: url(img/mobile-cards-background.jpg);
+		background-repeat: no-repeat;
+	}
+
+	.cards-description {
+		color: white;
+	}
+
+	.cards {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: nowrap;
+		flex-direction: column;
+		align-items: center;
+		perspective: 100rem;
+		-moz-perspective: 100rem;
+		position: relative;
+		font-family: 'Source Sans Pro', sans-serif;
+		height: 200vh;
+		width: 100%;
+	}
+
+	.card-inner {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+
+	.card-side {
+		height: 60rem;
+		width: 30rem;
+		font-size: 3rem;
+		color: white;
+	}
+
+	.card-side-front {
+		background-color: white;
+		position: absolute;
+		z-index: 1;
+		transition: all 1s;
+		color: black;
+		transform-style: preserve-3d;
+		backface-visibility: hidden;
+		text-align: center;
+		border-radius: 2.5rem;
+	}
+
+	.card-side-back {
+		background-image: linear-gradient(to right bottom, lightblue, lightgreen);
+		position: absolute;
+		z-index: 0;
+		transition: all 1s;
+		color: black;
+		transform: rotateY(-180deg);
+		transform-style: preserve-3d;
+		backface-visibility: hidden;
+		text-align: center;
+		border-radius: 2.5rem;
+	}
+
+	.card:hover .card-side-front {
+		transform: unset;
+	}
+
+	.card:hover .card-side-back {
+		transform: unset;
+	}
+
+	#landmarks {
+		-webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+		clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+	}
+
+	.reviews-title {
+		max-width: 768px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+
+	html {
+		font-size: 50%;
+	}
+
+	[class^="composition"] {
+		height: 25rem;
+		width: 37.5rem;
+		position: relative;
+		top: 15rem;
+		left: -30rem;
+		border-radius: 5rem;
+	}
+
+	[class^="composition"]:not(:last-child):hover {
+		transform: unset;
+	}
+
+	[class^="composition"]:hover [class^="composition"]:not(:hover) {
+		transform:unset;
+	}
+
+	.composition_--p1 {
+		left: 0rem;
+		top: 0rem;
+		transition: .4s;
+	}
+
+	.composition_--p2 {
+		left: 0rem;
+		top: 15rem;
+		transition: .4s;
+	}
+
+	.composition_--p3 {
+		left: 0rem;
+		top: 30rem;
+		transition: .4s;
 	}
 
 	.composition_--p1:hover {
@@ -684,16 +707,54 @@ body{
 
 	.cards {
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 		flex-wrap: nowrap;
-		flex-direction: row;
+		flex-direction: column;
 		align-items: center;
 		perspective: 100rem;
 		-moz-perspective: 100rem;
 		position: relative;
 		font-family: 'Source Sans Pro', sans-serif;
-		height: 40rem;
-		width: 70%;
+		height: 200vh;
+		width: 100%;
+	}
+
+	.card-inner {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+
+	.card-side {
+		height: 50rem;
+		width: 25rem;
+		font-size: 3rem;
+		color: white;
+	}
+
+	.card-side-front {
+		background-color: white;
+		position: absolute;
+		z-index: 1;
+		transition: all 1s;
+		color: black;
+		transform-style: preserve-3d;
+		backface-visibility: hidden;
+		text-align: center;
+		border-radius: 2.5rem;
+	}
+
+	.card-side-back {
+		background-image: linear-gradient(to right bottom, lightblue, lightgreen);
+		position: absolute;
+		z-index: 0;
+		transition: all 1s;
+		color: black;
+		transform: rotateY(-180deg);
+		transform-style: preserve-3d;
+		backface-visibility: hidden;
+		text-align: center;
+		border-radius: 2.5rem;
 	}
 
 	.card:hover .card-side-front {
@@ -704,45 +765,7 @@ body{
 		transform: unset;
 	}
 
-	.cards-description {
-		font-family: 'Source Sans Pro', sans-serif;
-		position: absolute;
-		z-index: 2000;
-		left: 2rem;
-		top: 140rem;
-		font-size: 3rem;
-		color: black;
-	}
-
 	#landmarks {
 		-webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
 		clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
 	}
-}
-
-@media only screen and (max-width: 450px) {
-	html {
-		font-size: 65%;
-		width: 100%;
-	}
-
-	.composition_--p1 {
-		left: 0rem;
-		top: 0rem;
-		border-radius: 2rem;
-	}
-
-	.composition_--p2 {
-		left: 0;
-		top: 27rem;
-		border-radius: 2rem;
-	}
-
-	.composition_--p3 {
-		left: 0rem;
-		top: 54rem;
-		border-radius: 2rem;
-	}
-
-	.col-1-of-2 {
-	width: calc((100%);
